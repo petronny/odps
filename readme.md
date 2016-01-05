@@ -27,6 +27,7 @@ $ make run
 
 ### JobRunnerImpl
 应该要实现一个可以子进程管理的东西。
+
 现在的版本是直接调用LocalJobRunner的一个外壳，最好是把LocalJobRunner里面的东西都移进来，之后干掉LocalJobRunner
 
 ### LocalJobRunner
@@ -36,12 +37,12 @@ $ make run
 - 之后开若干小的MapDriver/ReduceDriver，来MR
 - 输出接口调用(就是调用WareHouse)
 
-并且需要去除没有调用的东西+各种肮脏手段。
+需要去除没有调用的东西+各种肮脏手段。
 
 ### WareHouse
 原来是从服务器拖数据下来，存到`warehouse/project_name/__tables__/tablename`下，里面有2个东西
 
-- `__schema__`描述表结构用的，严格的说，如果文件太大分来存的话，文件列表也应该在里面
+- `__schema__`描述表结构用的，严格的说，如果文件太大分来存的话，文件列表也应该在里面。不过本题应该不用考虑了吧。
 - data用来存放数据
 
 我手动生成了这两个文件，并注释掉了源代码中的两句download。这里应该把这两处位置改成把那些csv表挪过来。`__schema__`的创建要根据WordCount中所写的创建。
