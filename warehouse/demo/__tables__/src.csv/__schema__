@@ -1,0 +1,3 @@
+project=demo
+table=src.csv
+columns=word1:BIGINT,word2:STRING
