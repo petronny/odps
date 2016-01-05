@@ -21,6 +21,8 @@ $ make compile
 $ make run
 ```
 
+结果在`warehouse/project_name/__tables__/demo/dest.csv/R_000000`
+
 ## 代码概述
 ### WordCount
 无需改动，相当于主程序。WordCount会调用JobRunnerImpl
