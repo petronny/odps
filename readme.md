@@ -71,6 +71,7 @@ $ make run
 这个就只有一个类了，看起来清爽一点。
 去除没有调用的东西+各种肮脏手段之后，
 里面的run函数现在也是再调用Reducer类实现功能，建议改成直接在这里实现。
+所需的Mapper,MapperBase,Reducer,ReducerBase四个类均已经提供，不能编译，仅供参考
 
 ## 建议的分工
 
