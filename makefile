@@ -4,4 +4,10 @@ all:compile run
 compile:
 	$(MAVEN) clean install -DskipTests
 run:
-	java -classpath target/classes:lib/odps-sdk-mapred-0.17.8-jar-with-dependencies.jar:lib/odps-mapred-local-0.15.0.jar:lib/odps-mapred-bridge-0.15.0.jar:lib/commons-collections-3.2.1.jar com.aliyun.odps.mapred.WordCount src.csv dest.csv
+	$(MAVEN) exec:java -Dexec.mainClass=com.aliyun.odps.mapred.WordCount -Dexec.args="src.csv dest.csv" -Dexec.classpathScope=compile
+zip:
+	rm -f project.zip
+	mkdir project
+	cp -r lib src pom.xml project
+	zip -rq project.zip project
+	rm -rf project

@@ -38,6 +38,7 @@ public class WordCount{
 		public void map(long recordNum,Record record,TaskContext context) throws IOException{
 			for(int i=0;i<record.getColumnCount();i++){
 				String[] words=record.get(i).toString().split("\\s+");
+//				String w=record.get(i).toString();
 				for(String w : words){
 					word.set(0,w);
 					context.write(word,one);

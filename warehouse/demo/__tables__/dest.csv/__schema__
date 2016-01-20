@@ -1,3 +1,0 @@
-project=demo
-table=dest.csv
-columns=word:STRING,count:BIGINT

@@ -21,12 +21,61 @@
     </build>
 
     <dependencies>
+
+        <dependency>
+            <groupId>com.google.code</groupId>
+            <artifactId>externalsorting</artifactId>
+            <version>0.1.9</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/externalsortinginjava-0.1.9.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.2.4</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/gson-2.2.4.jar</systemPath>
+        </dependency>
+    
+    <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/commons-io-2.4.jar</systemPath>
+        </dependency>
+    
         <dependency>
             <groupId>org.apache.commons</groupId>
-            <artifactId>org-apache-commons-collections</artifactId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.4</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/commons-lang-2.4.jar</systemPath>
+        </dependency>
+    
+        <dependency>
+            <groupId>com.csvreader</groupId>
+            <artifactId>javacsv</artifactId>
+            <version>2.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/javacsv-2.0.jar</systemPath>
+        </dependency>
+    
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections</artifactId>
             <version>3.2.1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/commons-collections-3.2.1.jar</systemPath>
+        </dependency>
+
+ 		<dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.1.1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/commons-logging-1.1.1.jar</systemPath>
         </dependency>
 
         <dependency>
@@ -44,13 +93,26 @@
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/odps-mapred-local-0.15.0.jar</systemPath>
         </dependency>
-
         <dependency>
             <groupId>com.aliyun.odps</groupId>
             <artifactId>odps-sdk-mapred</artifactId>
-            <version>0.17.8</version>
+            <version>0.15.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/odps-sdk-mapred-0.17.8-jar-with-dependencies.jar</systemPath>
+            <systemPath>${project.basedir}/lib/odps-sdk-mapred-0.15.0.jar</systemPath>
+        </dependency>
+		<dependency>
+            <groupId>com.aliyun.odps</groupId>
+            <artifactId>odps-sdk-commons</artifactId>
+            <version>0.15.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/odps-sdk-commons-0.15.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.aliyun.odps</groupId>
+            <artifactId>odps-sdk-core</artifactId>
+            <version>0.15.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/odps-sdk-core-0.15.0.jar</systemPath>
         </dependency>
     </dependencies>
 

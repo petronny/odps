@@ -6,10 +6,8 @@ package com.aliyun.odps.mapred;
 import com.aliyun.odps.counter.Counter;
 import com.aliyun.odps.data.Record;
 import com.aliyun.odps.data.TableInfo;
-import com.aliyun.odps.data.VolumeInfo;
 import com.aliyun.odps.mapred.JobContext;
 import com.aliyun.odps.mapred.TaskId;
-import com.aliyun.odps.volume.FileSystem;
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.util.Iterator;
@@ -46,21 +44,5 @@ public interface TaskContext extends JobContext {
 	void write(Record var1, String var2) throws IOException;
 
 	void write(Record var1, Record var2) throws IOException;
-
-	//VolumeInfo getInputVolumeInfo() throws IOException;
-
-	//VolumeInfo getInputVolumeInfo(String var1) throws IOException;
-
-	//VolumeInfo getOutputVolumeInfo() throws IOException;
-
-	//VolumeInfo getOutputVolumeInfo(String var1) throws IOException;
-
-	//FileSystem getInputVolumeFileSystem() throws IOException;
-
-	//FileSystem getInputVolumeFileSystem(String var1) throws IOException;
-
-	//FileSystem getOutputVolumeFileSystem() throws IOException;
-
-	//FileSystem getOutputVolumeFileSystem(String var1) throws IOException;
 }
 
